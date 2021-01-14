@@ -1,0 +1,102 @@
+nav.trans-nav {
+  position: fixed;
+  background-color: transparent;
+  /* background-color: rgb(255, 255, 255); */
+  z-index: 10;
+  height: 64px;
+  /* box-shadow: none; */
+}
+.nav-links a {
+  color: var(--main-black);
+  text-transform: uppercase;
+  font-size: 13px !important;
+  font-family: var(--sec-font);
+}
+.logo {
+  width: 120px;
+  position: relative;
+  /* top: 20px; */
+}
+.nav-login-group {
+  display: flex;
+}
+.nav-btn {
+  background-color: var(--primary-color);
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-radius: 4px;
+  box-shadow: none;
+  font-family: var(--font-smbold) !important;
+}
+.sidenav-trigger {
+  position: relative;
+  top: 5px;
+}
+.sidenav {
+  background-color: var(--main-white) !important;
+  color: var(--main-black) !important;
+  overflow-y: scroll;
+}
+.sidenav-logo {
+  background-color: var(--main-white);
+  /* text-align: center; */
+  padding: 2rem 32px;
+}
+.sidenav li > a {
+  color: var(--main-black);
+  font-size: 1.7rem;
+  font-family: var(--font-smbold);
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+}
+.sidenav-footer {
+  margin: 60px 0 0 0;
+}
+.signup-style {
+  background-color: var(--primary-color);
+}
+.login-style a {
+  color: var(--main-white) !important;
+}
+.login-style {
+  background: var(--vasiti-black);
+}
+
+@media only screen and (min-width: 601px) {
+  .sidenav {
+    width: 50%;
+  }
+  .nav-two {
+    line-height: 40px;
+    height: 40px;
+    background-color: var(--main-white);
+    border-top: var(--main-grey) 1px solid !important;
+    box-shadow: var(--main-shadow);
+  }
+  .nav-two a {
+    color: var(--main-black) !important;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: var(--sec-font);
+  }
+  .nav-two-content {
+    display: flex;
+    justify-content: center;
+  }
+  .sidenav-footer {
+    margin: 100px 0 0 0;
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+  }
+  .sidenav {
+    background-color: var(--vasiti-black);
+    color: var(--main-white);
+    width: 50% !important;
+    overflow-y: hidden;
+  }
+  .sidenav li > a {
+    font-size: 2.2rem !important;
+    margin: 0.6rem 0 0 0;
+  }
+}
