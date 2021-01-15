@@ -61,6 +61,9 @@ input[type="email"]:not(.browser-default):focus:not([readonly]) {
 .social-div ul {
   display: flex;
 }
+.social-div li{
+  padding: 0 .7rem 0 0;
+}
 @media (max-width: 600px) {
   .phone-container-main {
     position: static;
