@@ -23,9 +23,14 @@ section.customer-vendor {
 .c-v-img-container img {
   width: 50%;
 }
+@media (min-width: 993px){
+  .customer-item {
+    padding: 1rem 1rem !important;
+  } 
+}
 @media (max-width: 992px) {
   .customer-item {
-    padding: 1rem 2rem !important;
+    padding: 1rem 1rem !important;
   }
 }
 @media (max-width: 600px) {
@@ -33,6 +38,6 @@ section.customer-vendor {
     width: 50%;
   }
   .customer-item {
-    padding: 1rem 1rem !important ;
+    padding: 1rem 0rem !important ;
   }
 }
