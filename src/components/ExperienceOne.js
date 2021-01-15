@@ -111,17 +111,19 @@ const ExperienceOne = () => {
                 <h6 className="center">Share your amazing story!</h6>
               </div>
               <form>
-                <div className="file-field  col s12 file-setting">
-                  <input
-                    // type="button"
-                    // placeholder="Choose Image"?
-                    id="image"
-                    className="file-path"
-                  />
-
-                  <div>
-                    {/* <img src="images/Vector.svg" alt="file-icon-image" /> */}
+                <div className="file-field  col s12 input-field">
+                  <div className="btn">
+                    <span>File</span>
                     <input type="file" multiple />
+                  </div>
+
+                  <div className="file-path-wrapper">
+                    <input
+                      id="image"
+                      className="file-path-validate"
+                      type="text"
+                      placeholder="choose image"
+                    />
                   </div>
                 </div>
 
