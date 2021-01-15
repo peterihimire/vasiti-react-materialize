@@ -1,7 +1,7 @@
 nav.trans-nav {
   position: fixed;
-  background-color: transparent;
-  /* background-color: rgb(255, 255, 255); */
+  /* background-color: transparent; */
+  background-color: rgb(255, 255, 255);
   z-index: 10;
   height: 64px;
   /* box-shadow: none; */
@@ -63,7 +63,6 @@ nav.trans-nav {
 }
 
 @media only screen and (min-width: 601px) {
-
   .nav-two {
     line-height: 40px;
     height: 40px;
@@ -96,5 +95,10 @@ nav.trans-nav {
   .sidenav li > a {
     font-size: 2.2rem !important;
     margin: 0.6rem 0 0 0;
+  }
+}
+@media (max-width: 600px) {
+  .sidenav {
+    width: 80% !important;
   }
 }
