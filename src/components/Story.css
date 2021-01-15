@@ -1,0 +1,38 @@
+section.customer-vendor {
+  padding: 5rem 0;
+}
+.customer-item {
+  padding: 1rem 4rem !important ;
+}
+.c-v-name h6 {
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.c-v-name p {
+  text-transform: capitalize;
+}
+.c-v-name span {
+  color: var(--dark-blue);
+  background: var(--light-blue);
+  padding: 0.4rem;
+  margin: 0 0 0 1rem;
+  text-transform: uppercase;
+}
+.c-v-img-container img {
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .customer-item {
+    padding: 1rem 2rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .c-v-img-container img {
+    width: 50%;
+  }
+  .customer-item {
+    padding: 1rem 1rem !important ;
+  }
+}

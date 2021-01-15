@@ -1,8 +1,10 @@
+import StoryItem from "./story-item";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import ExperienceOne from "./components/ExperienceOne";
-import StoryItem from "./story-item";
+import StoryList from "./components/StoryList";
+import ExperienceTwo from "./components/ExperienceTwo";
 
 function App() {
   console.log(StoryItem);
@@ -11,6 +13,8 @@ function App() {
       <Navbar />
       <Banner />
       <ExperienceOne />
+      <StoryList stories={StoryItem} />
+      <ExperienceTwo />
     </>
   );
 }

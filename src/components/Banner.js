@@ -76,7 +76,7 @@ const Banner = () => {
                       Here is what customers and vendors are saying about us,
                       you can share your stories with us too.
                     </p>
-                    <div className="btn hidden-xs btn-bigger">buy a car</div>
+                 
                   </div>
                 </div>
                 <div className="col s12 m5 offset-m0 l5 offset-l2">
@@ -93,7 +93,6 @@ const Banner = () => {
                     Here is what customers and vendors are saying about us, you
                     can share your stories with us too.
                   </p>
-                  <div className="btn btn-bigger ">buy a car</div>
                 </div>
               </div>
             </div>
@@ -106,7 +105,7 @@ const Banner = () => {
                       Here is what customers and vendors are saying about us,
                       you can share your stories with us too.
                     </p>
-                    <div className="btn hidden-xs btn-bigger">buy a car</div>
+          
                   </div>
                 </div>
                 <div className="col s12 m5 offset-m0 l5 offset-l2">
@@ -123,7 +122,6 @@ const Banner = () => {
                     Here is what customers and vendors are saying about us, you
                     can share your stories with us too.
                   </p>
-                  <div className="btn btn-bigger">buy a car</div>
                 </div>
               </div>
             </div>
