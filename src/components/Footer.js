@@ -13,25 +13,34 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col s12 first-footer">
-            <div className="col s12 m4 offset-m2 visible-xs">
-              <div className="become-member-img-container">
-                <img src={beMemberComm} alt="be-a-member" class="be-a-member" />
-              </div>
-              <p className="white-text">
-                We’d make sure you’re always first to know what’s happening on
-                Vasiti, thus, the world.
-              </p>
-              <form>
-                <div className="form-control">
-                  <input type="email" placeholder="enter your email address" />
-                  <button className="btn white black-text subscribe-btn">
-                    subscribe
-                  </button>
+            <div className="col s12 m4 offset-m2 visible-xs ">
+              <div className="three-in-one">
+                <div className="become-member-img-container">
+                  <img
+                    src={beMemberComm}
+                    alt="be-a-member"
+                    class="be-a-member"
+                  />
                 </div>
-              </form>
+                <p className="white-text">
+                  We’d make sure you’re always first to know what’s happening on
+                  Vasiti, thus, the world.
+                </p>
+                <form>
+                  <div className="form-control">
+                    <input
+                      type="email"
+                      placeholder="enter your email address"
+                    />
+                    <button className="btn white black-text subscribe-btn">
+                      subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
             <div className="col s12 m5 offset-m1 phone-container-main ">
-              <div className="phone-img-container">
+              <div className="phone-img-container ">
                 <img
                   src={subBanner}
                   alt="subscribe-banner"
@@ -40,23 +49,28 @@ const Footer = () => {
               </div>
             </div>
             <div className="col s12 m5 offset-m1 hidden-xs">
-              <div className="become-member-img-container">
-                <img
-                  src={beMemberComm}
-                  alt="be-a-member"
-                  className="be-a-member"
-                />
-              </div>
-              <p className="white-text">
-                We’d make sure you’re always first to know what’s happening on
-                Vasiti—thus, the world.
-              </p>
-              <form>
-                <div className="form-control">
-                  <input type="email" placeholder="enter your email address" />
-                  <button className="btn white black-text">subscribe</button>
+              <div className="three-in-one">
+                <div className="become-member-img-container">
+                  <img
+                    src={beMemberComm}
+                    alt="be-a-member"
+                    className="be-a-member"
+                  />
                 </div>
-              </form>
+                <p className="white-text">
+                  We’d make sure you’re always first to know what’s happening on
+                  Vasiti—thus, the world.
+                </p>
+                <form>
+                  <div className="form-control">
+                    <input
+                      type="email"
+                      placeholder="enter your email address"
+                    />
+                    <button className="btn white black-text">subscribe</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
           <div className="col s12 second-footer">
