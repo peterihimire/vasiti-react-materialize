@@ -1,7 +1,7 @@
 import React from "react";
-import "./ExperienceOne.css";
+import "./ExperienceTwo.css";
 import "./Modal.css";
-import ShareLinkOne from "../assets/share-story-1.svg";
+import ShareLinkTwo from "../assets/share-story-2.svg";
 import LadyHappy from "../assets/woman-shoppingbag.png";
 import CloseImg from "../assets/x.svg";
 import M from "materialize-css/dist/js/materialize.min.js";
@@ -14,79 +14,50 @@ const ExperienceTwo = () => {
   });
   return (
     <>
-      <section className="experience">
-        <div className="row">
-          <div className="container">
-            <div className="col s12 center-xs">
-              <div className="col s12 m7">
-                <div className=" visible-xs">
-                  <div className="">
-                    <div className="experience-header">
-                      <h4 className="white-text">Tolu & Joys Experience</h4>
-                      <div className="experience-title">
-                        <p>customer</p>
-                      </div>
-                    </div>
-                    <div className="experience-detail">
-                      <p className="white-text">
-                        I had the best experience shopping with vasiti.
-                        Usability of the website was great, very good customer
-                        service, an all round great experience. I would
-                        definately be coming back! I had the best experience
-                        shopping with vasiti. Usability of the website was
-                        great, very good customer service, an all round great
-                        experience. I would definately be coming back!
-                      </p>
-                    </div>
-                    <div className="">
-                      <img
-                        src={LadyHappy}
-                        alt="lady happy"
-                        className="experience-img "
-                      />
-                    </div>
-                    <div className="share-img-container">
-                      <a href="#share" className="modal-trigger">
-                        <img src={ShareLinkOne} alt="share-story-link" />
-                      </a>
+      <section class="experience-section-2">
+        <div className="container">
+          <div className="row">
+            <div className="col s12 ">
+              <div className="col s12 m5 l4">
+                <div className="josiahs-experience-text">
+                  <div className="experience-header">
+                    <h4 className="black-text">Josiahs Experience</h4>
+                    <div className="experience-title">
+                      <p className="black-text">vendor</p>
                     </div>
                   </div>
-                </div>
-                <div className="hidden-xs">
-                  <img
-                    src={LadyHappy}
-                    alt="lady happy"
-                    className="experience-img "
-                  />
+
+                  <div className="experience-detail">
+                    <p className="black-text">
+                      I had the best experience shopping with vasiti. Usability
+                      of the website was great, very good customer service, an
+                      all round great experience. I would definately be coming
+                      back! I had the best experience shopping with vasiti.
+                      Usability of the website was great, very good customer
+                      service, an all round great experience. I would definately
+                      be coming back!
+                    </p>
+                  </div>
+                  <div className="visible-xs">
+                    <img
+                      src={LadyHappy}
+                      alt="woman-shopping"
+                      className="experience-img-2"
+                    />
+                  </div>
+                  <div className="share-img-container">
+                    <a href="#share" className="modal-trigger">
+                      <img src={ShareLinkTwo} alt="share-story-link" />
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div className="col s12 m5 offset-m0 l4">
-                <div className="experience-text hidden-xs">
-                  <div className="">
-                    <div className="experience-header">
-                      <h4 className="white-text">Tolu & Joys Experience</h4>
-                      <div className="experience-title">
-                        <p>customer</p>
-                      </div>
-                    </div>
-                    <div className="experience-detail">
-                      <p className="white-text">
-                        I had the best experience shopping with vasiti.
-                        Usability of the website was great, very good customer
-                        service, an all round great experience. I would
-                        definately be coming back! I had the best experience
-                        shopping with vasiti. Usability of the website was
-                        great, very good customer service, an all round great
-                        experience. I would definately be coming back!
-                      </p>
-                    </div>
-                    <div className="share-img-container">
-                      <a href="#share" className="modal-trigger">
-                        <img src={ShareLinkOne} alt="share-story-link" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div className="col s12 m6 offset-m1 l6 offset-l2 hidden-xs">
+                <img
+                  src={LadyHappy}
+                  alt="woman-shopping"
+                  className="experience-img-2"
+                />
               </div>
             </div>
           </div>

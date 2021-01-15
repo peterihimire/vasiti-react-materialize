@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import ExperienceOne from "./components/ExperienceOne";
 import StoryList from "./components/StoryList";
 import ExperienceTwo from "./components/ExperienceTwo";
+import Footer from "./components/Footer";
 
 function App() {
   console.log(StoryItem);
@@ -15,6 +16,8 @@ function App() {
       <ExperienceOne />
       <StoryList stories={StoryItem} />
       <ExperienceTwo />
+      <StoryList stories={StoryItem} />
+      <Footer />
     </>
   );
 }

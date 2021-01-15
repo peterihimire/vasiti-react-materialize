@@ -1,0 +1,22 @@
+.experience-section-2 {
+  background-color: #fff8f5;
+  padding: 5rem 0 0 0;
+}
+.experience-section-2 .experience-title p {
+  border-color: var(--primaryColor);
+  color: var(--primaryColor) !important;
+}
+.experience-section-2 .row {
+  margin-bottom: 0;
+}
+.experience-img-2 {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .experience-img-2 {
+    width: 100%;
+  }
+  .experience-text {
+    padding: 20px 0 0 0;
+  }
+}
