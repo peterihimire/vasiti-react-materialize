@@ -41,6 +41,9 @@ nav.trans-nav {
   background-color: var(--main-white);
   /* text-align: center; */
   padding: 2rem 32px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
 }
 .sidenav li > a {
   color: var(--main-black);

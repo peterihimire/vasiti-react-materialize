@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import "./Navbar.css";
 import logo from "../assets/vasiti-logo.png";
-import menu from "../assets/menu-icon.svg";
+import MenuIcon from "../assets/menu-icon.svg";
+import CloseIcon from "../assets/x.svg";
+
 import M from "materialize-css/dist/js/materialize.min.js";
 
 const Navbar = (props) => {
@@ -14,7 +16,7 @@ const Navbar = (props) => {
   return (
     <>
       <div className="navbar">
-        <nav class="trans-nav" role="navigation">
+        <nav className="trans-nav" role="navigation">
           <div className=" container nav-wrapper">
             <a href="/" className="brand-logo left">
               <img src={logo} alt="vasiti" className="logo" />
@@ -24,7 +26,7 @@ const Navbar = (props) => {
               className="sidenav-trigger right"
               data-target="mobile-nav"
             >
-              <img src={menu} alt="menu" className="menu-icon-img" />
+              <img src={MenuIcon} alt="menu" className="menu-icon-img" />
             </a>
 
             <ul className="hide-on-med-and-down right nav-links">
@@ -80,8 +82,11 @@ const Navbar = (props) => {
       <ul className="sidenav" id="mobile-nav">
         <div className="sidenav-logo">
           <a href="/">
-            <img src="images/vasiti-logo.png" alt="vasiti-logo" />
+            <img src={logo} alt="vasiti-logo" />
           </a>
+          <div className="sidenav-close">
+            <img src={CloseIcon} alt="close" />
+          </div>
         </div>
 
         <li className="nav-item">
@@ -100,7 +105,7 @@ const Navbar = (props) => {
             log in
           </a>
         </li>
-        <li class="nav-item signup-style ">
+        <li className="nav-item signup-style ">
           <a href="/" className="  ">
             sign up
           </a>
@@ -127,7 +132,7 @@ const Navbar = (props) => {
 
         <div className="sidenav-footer ">
           <div className="sidenav-footer-container center">
-            <div class="sidenav-social-icons">
+            <div className="sidenav-social-icons">
               <a href="/" target="_blank">
                 {" "}
                 <img src="images/fb.svg" alt="" />
