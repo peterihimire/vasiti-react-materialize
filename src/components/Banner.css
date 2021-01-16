@@ -20,6 +20,9 @@ div.carousel-item {
   color: var(--main-black) !important;
   font-family: lato;
 }
+.banner-heading {
+  overflow: hidden;
+}
 /* .main-text-container h1 {
   font-size: 57px;
   margin: 0.8rem 0 1.68rem 0;

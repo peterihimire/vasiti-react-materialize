@@ -11,11 +11,14 @@ const Banner = () => {
   let heroHeading = React.useRef(null);
   let heroMobile = React.useRef(null);
 
-  let tl = new TimelineLite();
+  let tl = new TimelineLite({ delay: 2 });
 
   React.useEffect(() => {
+    const headPix = heroImg.firstElementChild;
+
     // HEADINGS
     console.log(heroHeading);
+    console.log(headPix);
 
     const headingImg = heroImg;
     const headingFirst = heroHeading.children[0].children[0];
@@ -37,6 +40,14 @@ const Banner = () => {
     console.log(headingImg);
 
     TweenMax.to(hero, 0, { css: { visibility: "visible" } });
+
+    // HEADING IMAGE ANIMATION
+    tl.from(headPix, 1.2, { y: 1280, ease: Power3.easeOut }).from(
+      headPix.firstElementChild,
+      2,
+      { scale: 1.6, ease: Power3.easeOut },
+      0.2
+    );
     // HEADING TEXT ANIMATION
     tl.staggerFrom(
       [
@@ -47,12 +58,14 @@ const Banner = () => {
       ],
       1,
       {
-        y: 74,
+        y: 44,
         ease: Power3.easeOut,
         delay: 0.8,
       },
       0.15
-    );
+    )
+      .from(headingP, 2, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4)
+      .from(headingBtn, 2.8, { y: 30, opacity: 0, ease: Power3.easeOut }, 1.4);
   });
   React.useEffect(() => {
     // header carousel
@@ -156,11 +169,13 @@ const Banner = () => {
                     className="rel right-align banner-home-img"
                     ref={(el) => (heroImg = el)}
                   >
-                    <img
-                      src={bannerTwo}
-                      alt="banner-img-1"
-                      className="full-width home-img"
-                    />
+                    <div className="banner-home-img-inner">
+                      <img
+                        src={bannerTwo}
+                        alt="banner-img-1"
+                        className="full-width home-img"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div
