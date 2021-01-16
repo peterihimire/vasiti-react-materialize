@@ -75,24 +75,26 @@ const ExperienceTwo = () => {
               <div className="modal-header">
                 <h6 className="center">Share your amazing story!</h6>
               </div>
-              <form>
-                <div className="file-field  col s12 input-field">
-                  <div className="btn">
-                    <span>File</span>
-                    <input type="file" multiple />
-                  </div>
+              <form className="col s12">
+                <div className="row">
+                  <div className="file-field  col s12 input-field">
+                    <div className="btn btn-file">
+                      <span>File</span>
+                      <input type="file" multiple />
+                    </div>
 
-                  <div className="file-path-wrapper">
-                    <input
-                      id="image"
-                      className="file-path-validate"
-                      type="text"
-                      placeholder="choose image"
-                    />
+                    <div className="file-path-wrapper">
+                      <input
+                        id="image"
+                        className="file-path-validate"
+                        type="text"
+                        placeholder="choose image"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="name-field col s12">
+                <div className="name-field row">
                   <div className="input-field col s12 m6 ">
                     <input type="text" id="first_name" placeholder="" />
                     <label htmlFor="first_name">first name</label>
@@ -102,45 +104,50 @@ const ExperienceTwo = () => {
                     <label htmlFor="last_name">last name</label>
                   </div>
                 </div>
-                <div className=" input-field col s12 ">
-                  <textarea
-                    type="text"
-                    id="text-content"
-                    placeholder=""
-                    className="materialize-textarea"
-                  ></textarea>
-                  <label htmlFor="text-content">Share your story</label>
-                </div>
-                <div className=" col s12 form-radio">
-                  <div className="col s12 m6">
-                    <label>What did you interact with Vasiti as?</label>
-                  </div>
-                  <div className="col s12 m6 radio-btns">
-                    <p>
-                      <label>
-                        <input
-                          name="group1"
-                          type="radio"
-                          className="with-gap"
-                          defaultChecked
-                        />
-                        <span>Customer</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input
-                          name="group1"
-                          type="radio"
-                          className="with-gap"
-                        />
-                        <span>Vendor</span>
-                      </label>
-                    </p>
+                <div className="row">
+                  <div className=" input-field col s12 ">
+                    <textarea
+                      type="text"
+                      id="text-content"
+                      placeholder=""
+                      className="materialize-textarea"
+                    ></textarea>
+                    <label htmlFor="text-content">Share your story</label>
                   </div>
                 </div>
+                <div className="row">
+                  <div className="form-radio">
+                    <div className="col s12 m6">
+                      <label>What did you interact with Vasiti as?</label>
+                    </div>
+                    <div className="col s12 m6 radio-btns">
+                      <p>
+                        <label>
+                          <input
+                            name="group1"
+                            type="radio"
+                            className="with-gap"
+                            defaultChecked
+                          />
+                          <span>Customer</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input
+                            name="group1"
+                            type="radio"
+                            className="with-gap"
+                          />
+                          <span>Vendor</span>
+                        </label>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="col s12  center-xs right-align">
-                  <button className="btn btn-large">Share your story</button>
+                  <button className="btn btn-bigger">Share your story</button>
                 </div>
               </form>
             </div>
