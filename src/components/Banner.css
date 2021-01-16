@@ -1,4 +1,5 @@
-section.home {
+.hero {
+  visibility: hidden !important;
   position: relative !important;
   height: 80vh;
   min-height: 600px;
@@ -26,7 +27,7 @@ div.carousel-item {
 } */
 @media (min-width: 993px) {
   .main-text-container h1 {
-    font-size: 50px;
+    font-size: 45px;
     margin: 0.8rem 0 1.68rem 0;
     color: var(--vasiti-black);
   }
@@ -34,7 +35,7 @@ div.carousel-item {
 
 /* TABLET */
 @media (max-width: 992px) {
-  .home .carousel-item {
+  .hero .carousel-item {
     background-position: center center;
   }
   .main-text-container {
@@ -51,8 +52,8 @@ div.carousel-item {
 
 /* PHONE */
 @media (max-width: 600px) {
-  section.home {
-    min-height: 825px;
+  .hero {
+    min-height: 780px;
   }
   .main-text-container h1 {
     font-size: 38px;

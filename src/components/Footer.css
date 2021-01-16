@@ -47,12 +47,12 @@ footer {
   padding: 0rem 0 0 0;
 }
 .form-control [type="email"]:not(.browser-default) {
-  border-bottom: none;
-  margin: 0;
+  border-bottom: none !important;
+  margin: 0 !important;
 }
 input[type="email"]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: none;
-  box-shadow: none;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 .be-a-member {
