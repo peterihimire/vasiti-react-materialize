@@ -11,7 +11,7 @@ const Banner = () => {
   let heroHeading = React.useRef(null);
   let heroMobile = React.useRef(null);
 
-  let tl = new TimelineLite({ delay: 2 });
+  let tl = new TimelineLite({ delay: 0.8 });
 
   React.useEffect(() => {
     const headPix = heroImg.firstElementChild;
@@ -42,7 +42,7 @@ const Banner = () => {
     TweenMax.to(hero, 0, { css: { visibility: "visible" } });
 
     // HEADING IMAGE ANIMATION
-    tl.from(headPix, 1.2, { y: 1280, ease: Power3.easeOut }).from(
+    tl.from(headPix, 1.2, { y: 1280, ease: Power3.easeOut }, "start").from(
       headPix.firstElementChild,
       2,
       { scale: 1.6, ease: Power3.easeOut },
@@ -62,10 +62,11 @@ const Banner = () => {
         ease: Power3.easeOut,
         delay: 0.8,
       },
-      0.15
+      0.15,
+      "start"
     )
-      .from(headingP, 2, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4)
-      .from(headingBtn, 2.8, { y: 30, opacity: 0, ease: Power3.easeOut }, 1.4);
+      .from(headingP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4)
+      .from(headingBtn, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.6);
   });
   React.useEffect(() => {
     // header carousel
