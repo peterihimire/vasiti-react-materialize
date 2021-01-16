@@ -1,7 +1,7 @@
 import React from "react";
 import "./Banner.css";
 import M from "materialize-css/dist/js/materialize.min.js";
-import bannerOne from "../assets/man-and-lady.png";
+// import bannerOne from "../assets/man-and-lady.png";
 import bannerTwo from "../assets/man-and-lady.png";
 
 const Banner = () => {
@@ -69,17 +69,17 @@ const Banner = () => {
           <div className="carousel carousel-slider full-height">
             <div className="carousel-item">
               <div className="col s12 pad0 center-xs">
-                <div className="col s12 m7 l5 ">
+                <div className="col s12 m6 l5 ">
                   <div className="main-text-container">
                     <h1>Amazing Experiences from Our Wonderful Customers</h1>
                     <p className="hidden-xs">
                       Here is what customers and vendors are saying about us,
                       you can share your stories with us too.
                     </p>
-                 
+                    <div className="btn hidden-xs btn-bigger">share story</div>
                   </div>
                 </div>
-                <div className="col s12 m5 offset-m0 l5 offset-l2">
+                <div className="col s12 m6 offset-m0 l7 offset-l0">
                   <div className="rel right-align banner-home-img">
                     <img
                       src={bannerTwo}
@@ -93,22 +93,23 @@ const Banner = () => {
                     Here is what customers and vendors are saying about us, you
                     can share your stories with us too.
                   </p>
+                  <div className="btn btn-bigger">share story</div>
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
+            {/* <div className="carousel-item">
               <div className="col s12 pad0 center-xs">
-                <div className="col s12 m7 l5">
+                <div className="col s12 m6 l6 ">
                   <div className="main-text-container">
                     <h1>Amazing Experiences from Our Wonderful Customers</h1>
                     <p className="hidden-xs">
                       Here is what customers and vendors are saying about us,
                       you can share your stories with us too.
                     </p>
-          
+                    <div className="btn hidden-xs btn-bigger">share story</div>
                   </div>
                 </div>
-                <div className="col s12 m5 offset-m0 l5 offset-l2">
+                <div className="col s12 m6 offset-m0 l6 offset-l0 ">
                   <div className="rel right-align banner-home-img">
                     <img
                       src={bannerOne}
@@ -122,9 +123,10 @@ const Banner = () => {
                     Here is what customers and vendors are saying about us, you
                     can share your stories with us too.
                   </p>
+                  <div className="btn btn-bigger">share story</div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

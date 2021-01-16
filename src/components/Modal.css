@@ -16,7 +16,15 @@
 .modal-header h6 {
   font-weight: 1000;
 }
-
+.btn-file {
+  background-color: var(--primary-color);
+  color: var(--main-white);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 46px !important;
+  width: 56px;
+}
 .input-field {
   padding-left: 0 !important;
 }
@@ -44,7 +52,6 @@
 .file-field [type="text"]:not(.browser-default) {
   /* border-bottom: none !important; */
 }
-
 
 /* .file-field .file-path-wrapper {
   width: 100% !important;

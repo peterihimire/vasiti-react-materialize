@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
           <div className="col s12 second-footer">
             <div className="col s6 m4 l5ths">
-              <div className="">
+              <div className="second-footer-content">
                 <h6>Company</h6>
                 <ul>
                   <li>
@@ -94,7 +94,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col s6 m4 l5ths">
-              <div className="">
+              <div className="second-footer-content">
                 <h6>Products</h6>
                 <ul>
                   <li>
@@ -116,7 +116,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col s6 m5ths">
-              <div className="">
+              <div className="second-footer-content">
                 <h6>Careers</h6>
                 <ul>
                   <li>
@@ -135,7 +135,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col s6 m4 l5ths">
-              <div className="">
+              <div className="second-footer-content">
                 <h6>Get in touch</h6>
                 <ul>
                   <li>
@@ -154,7 +154,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col s6 m4 l5ths">
-              <div className="">
+              <div className="second-footer-content">
                 <h6>Join our community</h6>
                 <div className="social-div">
                   <ul>

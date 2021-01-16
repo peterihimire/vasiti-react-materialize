@@ -19,10 +19,17 @@ div.carousel-item {
   color: var(--main-black) !important;
   font-family: lato;
 }
-.main-text-container h1 {
+/* .main-text-container h1 {
   font-size: 57px;
   margin: 0.8rem 0 1.68rem 0;
   color: var(--vasiti-black);
+} */
+@media (min-width: 993px) {
+  .main-text-container h1 {
+    font-size: 50px;
+    margin: 0.8rem 0 1.68rem 0;
+    color: var(--vasiti-black);
+  }
 }
 
 /* TABLET */
@@ -35,7 +42,7 @@ div.carousel-item {
     bottom: 25%;
   }
   .main-text-container h1 {
-    font-size: 47px;
+    font-size: 35px;
   }
   .banner-home-img {
     padding: 4rem 0 0 0;

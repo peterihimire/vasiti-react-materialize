@@ -98,4 +98,7 @@ input[type="email"]:not(.browser-default):focus:not([readonly]) {
     width: 100%;
     padding: 2rem 0 0 0;
   }
+  .second-footer-content h6{
+    font-size: 1rem;
+  }
 }

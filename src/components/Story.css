@@ -13,9 +13,24 @@ section.customer-vendor {
 .c-v-name p {
   text-transform: capitalize;
 }
-.c-v-name span {
+/* .c-v-name span {
   color: var(--dark-blue);
   background: var(--light-blue);
+  padding: 0.4rem;
+  margin: 0 0 0 1rem;
+  text-transform: uppercase;
+} */
+
+.green-color {
+  color: var(--dark-green);
+  background: var(--light-green) !important;
+  padding: 0.4rem;
+  margin: 0 0 0 1rem;
+  text-transform: uppercase;
+}
+.blue-color {
+  color: var(--dark-blue);
+  background: var(--light-blue) !important;
   padding: 0.4rem;
   margin: 0 0 0 1rem;
   text-transform: uppercase;
@@ -23,10 +38,10 @@ section.customer-vendor {
 .c-v-img-container img {
   width: 50%;
 }
-@media (min-width: 993px){
+@media (min-width: 993px) {
   .customer-item {
     padding: 1rem 1rem !important;
-  } 
+  }
 }
 @media (max-width: 992px) {
   .customer-item {

@@ -10,7 +10,7 @@ const Story = ({ story }) => {
       <div className="c-v-name">
         <h6>{story.name}</h6>
         <p>
-          {story.location} <span>{story.interact}</span>
+          {story.location} <span className={story.color} >{story.interact}</span>
         </p>
       </div>
       <div className="c-v-comment">

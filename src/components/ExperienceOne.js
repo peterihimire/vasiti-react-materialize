@@ -112,7 +112,7 @@ const ExperienceOne = () => {
               </div>
               <form>
                 <div className="file-field  col s12 input-field">
-                  <div className="btn">
+                  <div className="btn btn-file">
                     <span>File</span>
                     <input type="file" multiple />
                   </div>
@@ -175,7 +175,7 @@ const ExperienceOne = () => {
                   </div>
                 </div>
                 <div className="col s12  center-xs right-align">
-                  <button className="btn btn-large">Share your story</button>
+                  <button className="btn btn-bigger">Share your story</button>
                 </div>
               </form>
             </div>
