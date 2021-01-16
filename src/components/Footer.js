@@ -32,7 +32,7 @@ const Footer = () => {
                       type="email"
                       placeholder="enter your email address"
                     />
-                    <button className="btn white black-text subscribe-btn">
+                    <button className="btn white black-text sub-btn">
                       subscribe
                     </button>
                   </div>
@@ -67,7 +67,9 @@ const Footer = () => {
                       type="email"
                       placeholder="enter your email address"
                     />
-                    <button className="btn white black-text">subscribe</button>
+                    <button className="btn white black-text sub-btn">
+                      subscribe
+                    </button>
                   </div>
                 </form>
               </div>

@@ -34,9 +34,9 @@ footer {
   width: 100%;
   display: flex;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 6px;
+  border-radius: 4px;
   align-items: center;
-  padding: 0 0.5rem;
+  padding: 0 0.2rem;
 }
 .form-control button {
   border-radius: 4px !important;
@@ -63,6 +63,10 @@ input[type="email"]:not(.browser-default):focus:not([readonly]) {
 }
 .social-div li {
   padding: 0 0.7rem 0 0;
+}
+.sub-btn {
+  width: 200px !important;
+  height: 40px !important;
 }
 @media (max-width: 600px) {
   .phone-container-main {
@@ -98,7 +102,13 @@ input[type="email"]:not(.browser-default):focus:not([readonly]) {
     width: 100%;
     padding: 2rem 0 0 0;
   }
-  .second-footer-content h6{
+  .second-footer-content h6 {
     font-size: 1rem;
+  }
+  .sub-btn {
+    width: 150px !important;
+  }
+  .social-div li {
+    padding: 0 0.4rem 0 0;
   }
 }
