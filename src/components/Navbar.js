@@ -3,8 +3,8 @@ import "./Navbar.css";
 import logo from "../assets/vasiti-logo.png";
 import MenuIcon from "../assets/menu-icon.svg";
 import CloseIcon from "../assets/x.svg";
-
 import M from "materialize-css/dist/js/materialize.min.js";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = (props) => {
   useEffect(() => {
@@ -21,25 +21,53 @@ const Navbar = (props) => {
             <a href="/" className="brand-logo left">
               <img src={logo} alt="vasiti" className="logo" />
             </a>
-            <a
+            {/* <a
               href="/"
               className="sidenav-trigger right"
               data-target="mobile-nav"
             >
               <img src={MenuIcon} alt="menu" className="menu-icon-img" />
-            </a>
+            </a> */}
+            <NavLink
+              exact
+              activeClassName="active"
+              to="/"
+              className="sidenav-trigger right"
+              data-target="mobile-nav"
+            >
+              <img src={MenuIcon} alt="menu" className="menu-icon-img" />
+            </NavLink>
 
             <ul className="hide-on-med-and-down right nav-links">
               <li className="nav-item">
-                <a className="black-text" href="about.html">
+                <NavLink
+                  exact
+                  activeClassName="active"
+                  className="navbar-single-link"
+                  to="/about"
+                >
                   about us
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a href="/">stories</a>
+                <NavLink
+                  exact
+                  activeClassName="active"
+                  className="navbar-single-link"
+                  to="/about"
+                >
+                  stories
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a href="/">contact</a>
+                <NavLink
+                  exact
+                  activeClassName="active"
+                  className="navbar-single-link"
+                  to="/about"
+                >
+                  contact
+                </NavLink>
               </li>
               <li className="nav-item nav-login-group">
                 <a href="/">log in</a>
@@ -84,21 +112,48 @@ const Navbar = (props) => {
           <img src={CloseIcon} alt="close" />
         </div>
         <div className="sidenav-logo">
-          <a href="/">
+          {/* <a href="/">
             <img src={logo} alt="vasiti-logo" />
-          </a>
+          </a> */}
+          <NavLink
+            exact
+            activeClassName="active"
+            className="navbar-single-link"
+            to="/"
+          >
+            <img src={logo} alt="vasiti-logo" />
+          </NavLink>
         </div>
 
         <li className="nav-item">
-          <a className="" href="/about.html">
+          <NavLink
+            exact
+            activeClassName="active"
+            className="navbar-single-link"
+            to="/about"
+          >
             about us
-          </a>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a href="/">stories</a>
+          <NavLink
+            exact
+            activeClassName="active"
+            className="navbar-single-link"
+            to="/stories"
+          >
+            stories
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a href="/">contact</a>
+          <NavLink
+            exact
+            activeClassName="active"
+            className="navbar-single-link"
+            to="/contact"
+          >
+            contact
+          </NavLink>
         </li>
         <li className="nav-item login-style">
           <a href="/" className="">
@@ -112,7 +167,14 @@ const Navbar = (props) => {
         </li>
 
         <li>
-          <a href="/">marketplace</a>
+          <NavLink
+            exact
+            activeClassName="active"
+            className="navbar-single-link"
+            to="/marketplace"
+          >
+            marketplace
+          </NavLink>
         </li>
         <li>
           <a href="/">wholesale center</a>
