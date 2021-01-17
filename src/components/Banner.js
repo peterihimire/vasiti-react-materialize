@@ -11,6 +11,9 @@ const Banner = () => {
   let heroImg = React.useRef(null);
   let heroHeading = React.useRef(null);
   let heroMobile = React.useRef(null);
+  let expOneImg = React.useRef(null);
+  let expTwoImg = React.useRef(null);
+  let vasitiMag = React.useRef(null);
 
   let tl = new TimelineLite({ delay: 0.8 });
 
@@ -55,7 +58,7 @@ const Banner = () => {
       .from(headingBtn, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.6)
       .from(heroMobP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4)
       .from(heroMobBtn, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.6);
-  });
+  }, []);
 
   // MATERIALIZE-CSS CAROUSEL WITH REACT HELPER FUNCTIONS
   React.useEffect(() => {

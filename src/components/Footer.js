@@ -6,8 +6,23 @@ import fb from "../assets/fb.svg";
 import tw from "../assets/tw.svg";
 import ins from "../assets/in.svg";
 import ig from "../assets/ig.svg";
+import { TweenMax, TimelineLite, Power3 } from "gsap";
 
 const Footer = () => {
+  // GSAP FUNCTIONS
+
+  let vasitiMag = React.useRef(null);
+
+  let tl = new TimelineLite({ delay: 3.8 });
+
+  React.useEffect(() => {
+    const magImg = vasitiMag;
+
+    // TweenMax.to(hero, 0, { css: { visibility: "visible" } });
+
+    // VASITI-MAG IMAGE ANIMATION
+    tl.from(magImg, 2, { y: 200, ease: Power3.easeOut }, 2.4);
+  }, [tl]);
   return (
     <footer>
       <div className="container">
@@ -40,7 +55,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="col s12 m5 offset-m1 phone-container-main ">
-              <div className="phone-img-container ">
+              <div
+                className="phone-img-container "
+                ref={(el) => (vasitiMag = el)}
+              >
                 <img
                   src={subBanner}
                   alt="subscribe-banner"

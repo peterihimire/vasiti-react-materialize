@@ -5,8 +5,26 @@ import ShareLinkOne from "../assets/share-story-1.svg";
 import TwoLadiesImg from "../assets/black-beautiful-ladies-smiling.svg";
 import CloseImg from "../assets/x.svg";
 import M from "materialize-css/dist/js/materialize.min.js";
+import { TweenMax, TimelineLite, Power3 } from "gsap";
 
 const ExperienceOne = () => {
+  // GSAP FUNCTIONS
+
+  let expOneImg = React.useRef(null);
+  // let expTwoImg = React.useRef(null);
+  // let vasitiMag = React.useRef(null);
+
+  let tl = new TimelineLite({ delay: 3.8 });
+
+  React.useEffect(() => {
+    const expImg = expOneImg;
+
+    // TweenMax.to(hero, 0, { css: { visibility: "visible" } });
+
+    // HEADING IMAGE ANIMATION
+    tl.from(expImg, 2, { x: -2000, ease: Power3.easeOut }, 2.4);
+  }, [tl]);
+
   React.useEffect(() => {
     // Modal
     const modalTrig = document.querySelector(".modal");
@@ -41,7 +59,7 @@ const ExperienceOne = () => {
                         definately be coming back!
                       </p>
                     </div>
-                    <div className="">
+                    <div className="" ref={(el) => (expOneImg = el)}>
                       <img
                         src={TwoLadiesImg}
                         alt="two-ladies"
@@ -55,7 +73,7 @@ const ExperienceOne = () => {
                     </div>
                   </div>
                 </div>
-                <div className="hidden-xs">
+                <div className="hidden-xs" ref={(el) => (expOneImg = el)}>
                   <img
                     src={TwoLadiesImg}
                     alt="two-ladies"
