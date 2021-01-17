@@ -6,6 +6,7 @@ import bannerTwo from "../assets/man-and-lady.png";
 import { TweenMax, TimelineLite, Power3 } from "gsap";
 
 const Banner = () => {
+  // GSAP FUNCTIONS
   let hero = React.useRef(null);
   let heroImg = React.useRef(null);
   let heroHeading = React.useRef(null);
@@ -15,29 +16,14 @@ const Banner = () => {
 
   React.useEffect(() => {
     const headPix = heroImg.firstElementChild;
-
-    // HEADINGS
-    console.log(heroHeading);
-    console.log(headPix);
-
-    const headingImg = heroImg;
     const headingFirst = heroHeading.children[0].children[0];
     const headingSecond = headingFirst.nextSibling;
     const headingThird = headingSecond.nextSibling;
     const headingFourth = headingThird.nextSibling;
     const headingP = heroHeading.children[1];
     const headingBtn = heroHeading.children[2];
-    const heroMobHead = heroMobile.children[0];
-    const heroMobP = heroMobHead.nextSibling;
-    console.log(headingP);
-    console.log(headingBtn);
-    console.log(headingFirst.children);
-    console.log(headingSecond);
-    console.log(headingThird);
-    console.log(headingFourth);
-    console.log(heroMobHead);
-    console.log(heroMobP);
-    console.log(headingImg);
+    const heroMobP = heroMobile.children[0];
+    const heroMobBtn = heroMobP.nextSibling;
 
     TweenMax.to(hero, 0, { css: { visibility: "visible" } });
 
@@ -66,10 +52,13 @@ const Banner = () => {
       "start"
     )
       .from(headingP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4)
-      .from(headingBtn, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.6);
+      .from(headingBtn, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.6)
+      .from(heroMobP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4)
+      .from(heroMobBtn, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.6);
   });
+
+  // MATERIALIZE-CSS CAROUSEL WITH REACT HELPER FUNCTIONS
   React.useEffect(() => {
-    // header carousel
     const headerCarousel = document.querySelector(".carousel");
     const carouselH = document.querySelector(".carousel.carousel-slider");
     const carouselVx = document.querySelector(
