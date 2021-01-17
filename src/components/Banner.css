@@ -14,7 +14,7 @@ div.carousel-item {
 }
 .main-text-container {
   position: relative;
-  top: 30px;
+  top: 80px;
 }
 .main-text-container p {
   color: var(--main-black) !important;
@@ -23,14 +23,7 @@ div.carousel-item {
 .banner-heading {
   overflow: hidden;
 }
-/* .banner-home-img-inner {
-  overflow: hidden;
-} */
-/* .main-text-container h1 {
-  font-size: 57px;
-  margin: 0.8rem 0 1.68rem 0;
-  color: var(--vasiti-black);
-} */
+
 @media (min-width: 993px) {
   .main-text-container h1 {
     font-size: 45px;

@@ -80,13 +80,13 @@ const Navbar = (props) => {
       </div>
 
       <ul className="sidenav" id="mobile-nav">
+        <div className="sidenav-close">
+          <img src={CloseIcon} alt="close" />
+        </div>
         <div className="sidenav-logo">
           <a href="/">
             <img src={logo} alt="vasiti-logo" />
           </a>
-          <div className="sidenav-close">
-            <img src={CloseIcon} alt="close" />
-          </div>
         </div>
 
         <li className="nav-item">

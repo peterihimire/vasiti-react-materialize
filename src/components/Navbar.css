@@ -38,6 +38,11 @@ nav.trans-nav {
   color: var(--main-black) !important;
   overflow-y: scroll;
 }
+.sidenav-close{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem 2rem 2rem;
+}
 .sidenav-logo {
   background-color: var(--main-white);
   /* text-align: center; */
