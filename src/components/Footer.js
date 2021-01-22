@@ -6,7 +6,7 @@ import fb from "../assets/fb.svg";
 import tw from "../assets/tw.svg";
 import ins from "../assets/in.svg";
 import ig from "../assets/ig.svg";
-import { TweenMax, TimelineLite, Power3 } from "gsap";
+import { TimelineLite, Power3 } from "gsap";
 
 const Footer = () => {
   // GSAP FUNCTIONS
@@ -21,8 +21,8 @@ const Footer = () => {
     // TweenMax.to(hero, 0, { css: { visibility: "visible" } });
 
     // VASITI-MAG IMAGE ANIMATION
-    tl.from(magImg, 2, { y: 200, ease: Power3.easeOut }, 2.4);
-  }, [tl]);
+    tl.from(magImg, 2, { y: 200, ease: Power3.easeOut }, 2.4, [tl]);
+  });
   return (
     <footer>
       <div className="container">

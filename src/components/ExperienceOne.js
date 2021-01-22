@@ -5,7 +5,7 @@ import ShareLinkOne from "../assets/share-story-1.svg";
 import TwoLadiesImg from "../assets/black-beautiful-ladies-smiling.svg";
 import CloseImg from "../assets/x.svg";
 import M from "materialize-css/dist/js/materialize.min.js";
-import { TweenMax, TimelineLite, Power3 } from "gsap";
+import { TimelineLite, Power3 } from "gsap";
 
 const ExperienceOne = () => {
   // GSAP FUNCTIONS
@@ -22,8 +22,8 @@ const ExperienceOne = () => {
     // TweenMax.to(hero, 0, { css: { visibility: "visible" } });
 
     // HEADING IMAGE ANIMATION
-    tl.from(expImg, 2, { x: -2000, ease: Power3.easeOut }, 2.4);
-  }, [tl]);
+    tl.from(expImg, 2, { x: -2000, ease: Power3.easeOut }, 2.4, [tl]);
+  });
 
   React.useEffect(() => {
     // Modal

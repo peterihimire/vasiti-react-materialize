@@ -4,7 +4,7 @@ import logo from "../assets/vasiti-logo.png";
 import MenuIcon from "../assets/menu-icon.svg";
 import CloseIcon from "../assets/x.svg";
 import M from "materialize-css/dist/js/materialize.min.js";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
   useEffect(() => {
