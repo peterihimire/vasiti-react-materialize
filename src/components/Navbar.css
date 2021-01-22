@@ -119,11 +119,21 @@ nav.trans-nav {
   .sidenav {
     width: 80% !important;
   }
+  .sidenav li > a {
+    font-size: 1rem !important;
+    margin: 0.3rem 0 0 0 !important;
+  }
+  .sidenav-logo {
+    padding: 1rem 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidenav-logo img {
+    width: 100px;
+  }
   .sidenav-footer {
-    margin: 100px 0 0 0;
-    position: absolute;
-    width: 100%;
-    bottom: 70px;
+    margin: 300px 0 0 0;
   }
   .sidenav-footer-container {
     text-align: center !important;
