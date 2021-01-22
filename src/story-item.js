@@ -11,7 +11,7 @@ import img10 from "./assets/img10.svg";
 
 let STORY;
 
-export default STORY = [
+STORY = [
   {
     id: 1,
     name: "peter Ihimire",
@@ -109,3 +109,4 @@ export default STORY = [
     image: img10,
   },
 ];
+export default STORY;
