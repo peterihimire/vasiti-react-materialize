@@ -1,5 +1,5 @@
 .hero {
-  visibility: hidden !important;
+  /* visibility: hidden !important; */
   position: relative !important;
   height: 80vh;
   min-height: 600px;
@@ -9,7 +9,7 @@
 .carousel.full-height {
   height: 100% !important ;
 }
-div.carousel-item {
+div.hero-content-main {
   padding-top: 15%;
 }
 .main-text-container {
@@ -66,5 +66,8 @@ div.carousel-item {
   }
   .banner-home-img {
     padding: 0rem 0 0 0;
+  }
+  .hero-content-main{
+    text-align: center;
   }
 }

@@ -38,7 +38,7 @@ nav.trans-nav {
   color: var(--main-black) !important;
   overflow-y: scroll;
 }
-.sidenav-close{
+.sidenav-close {
   display: flex;
   justify-content: flex-end;
   padding: 1rem 2rem 2rem 2rem;
@@ -70,7 +70,9 @@ nav.trans-nav {
 .login-style {
   background: var(--vasiti-black);
 }
-
+.sidenav-footer-container {
+  text-align: center;
+}
 @media only screen and (min-width: 601px) {
   .nav-two {
     line-height: 40px;
@@ -107,13 +109,23 @@ nav.trans-nav {
   }
 }
 @media (max-width: 600px) {
+  nav.trans-nav {
+    position: fixed;
+    /* background-color: transparent; */
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    height: 55px;
+  }
   .sidenav {
     width: 80% !important;
   }
   .sidenav-footer {
-    margin: 60px 0 0 0;
-    /* position: absolute;
-    bottom: 90px;
-    width: 100%; */
+    margin: 100px 0 0 0;
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+  }
+  .sidenav-footer-container {
+    text-align: center !important;
   }
 }

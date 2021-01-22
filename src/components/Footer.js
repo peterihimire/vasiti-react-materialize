@@ -34,7 +34,7 @@ const Footer = () => {
                   <img
                     src={beMemberComm}
                     alt="be-a-member"
-                    class="be-a-member"
+                    className="be-a-member"
                   />
                 </div>
                 <p className="white-text">

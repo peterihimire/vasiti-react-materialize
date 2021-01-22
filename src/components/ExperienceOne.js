@@ -153,7 +153,7 @@ const ExperienceOne = () => {
                     <label htmlFor="first_name">first name</label>
                   </div>
                   <div className="input-field col s12 m6">
-                    <input type="text" p id="last_name" placeholder="" />
+                    <input type="text" id="last_name" placeholder="" />
                     <label htmlFor="last_name">last name</label>
                   </div>
                 </div>

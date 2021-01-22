@@ -30,7 +30,7 @@ const ExperienceTwo = () => {
   });
   return (
     <>
-      <section class="experience-section-2">
+      <section className="experience-section-2">
         <div className="container">
           <div className="row">
             <div className="col s12 ">
@@ -119,7 +119,7 @@ const ExperienceTwo = () => {
                     <label htmlFor="first_name">first name</label>
                   </div>
                   <div className="input-field col s12 m6">
-                    <input type="text" p id="last_name" placeholder="" />
+                    <input type="text" id="last_name" placeholder="" />
                     <label htmlFor="last_name">last name</label>
                   </div>
                 </div>

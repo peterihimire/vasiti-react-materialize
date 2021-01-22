@@ -193,8 +193,8 @@ const Navbar = (props) => {
         </li>
 
         <div className="sidenav-footer ">
-          <div className="sidenav-footer-container center">
-            <div className="sidenav-social-icons">
+          <div className="sidenav-footer-container ">
+            {/* <div className="sidenav-social-icons">
               <a href="/" target="_blank">
                 {" "}
                 <img src="images/fb.svg" alt="" />
@@ -211,9 +211,9 @@ const Navbar = (props) => {
                 {" "}
                 <img src="images/tw.svg" alt="" />
               </a>
-            </div>
-            <div className="black-txt bold-txt">
-              <p>©COPYRIGHT VASITI.COM 2020</p>
+            </div> */}
+            <div className=" sidenav-footer-copyright">
+              <p>©COPYRIGHT VASITI 2021</p>
             </div>
           </div>
         </div>
