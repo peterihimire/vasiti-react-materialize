@@ -33,6 +33,13 @@ nav.trans-nav {
   position: relative;
   top: 5px;
 }
+nav .sidenav-trigger {
+  float: left;
+  position: relative;
+  z-index: 1;
+  height: 56px;
+  margin: 0 0 0 18px !important;
+}
 .sidenav {
   background-color: var(--main-white) !important;
   color: var(--main-black) !important;
