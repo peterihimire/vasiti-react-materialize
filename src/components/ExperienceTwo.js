@@ -5,24 +5,9 @@ import ShareLinkTwo from "../assets/share-story-2.svg";
 import LadyHappy from "../assets/woman-shoppingbag.png";
 import CloseImg from "../assets/x.svg";
 import M from "materialize-css/dist/js/materialize.min.js";
-import { TimelineLite, Power3 } from "gsap";
+import Fade from "react-reveal/Fade";
 
 const ExperienceTwo = () => {
-  // GSAP FUNCTIONS
-
-  let expTwoImg = React.useRef(null);
-
-  let tl = new TimelineLite({ delay: 3.8 });
-
-  React.useEffect(() => {
-    const expImg = expTwoImg;
-
-    // TweenMax.to(hero, 0, { css: { visibility: "visible" } });
-
-    // HEADING IMAGE ANIMATION
-    tl.from(expImg, 2, { x: 2000, ease: Power3.easeOut }, 2.4, [tl]);
-  });
-
   React.useEffect(() => {
     // Modal
     const modalTrig = document.querySelector(".modal");
@@ -54,13 +39,16 @@ const ExperienceTwo = () => {
                       be coming back!
                     </p>
                   </div>
-                  <div className="visible-xs" ref={(el) => (expTwoImg = el)}>
-                    <img
-                      src={LadyHappy}
-                      alt="woman-shopping"
-                      className="experience-img-2"
-                    />
-                  </div>
+                  <Fade right delay={200} duration={3000}>
+                    <div className="visible-xs">
+                      <img
+                        src={LadyHappy}
+                        alt="woman-shopping"
+                        className="experience-img-2"
+                      />
+                    </div>
+                  </Fade>
+
                   <div className="share-img-container">
                     <a href="#share" className="modal-trigger">
                       <img src={ShareLinkTwo} alt="share-story-link" />
@@ -68,16 +56,15 @@ const ExperienceTwo = () => {
                   </div>
                 </div>
               </div>
-              <div
-                className="col s12 m6 offset-m1 l6 offset-l2 hidden-xs"
-                ref={(el) => (expTwoImg = el)}
-              >
-                <img
-                  src={LadyHappy}
-                  alt="woman-shopping"
-                  className="experience-img-2"
-                />
-              </div>
+              <Fade right delay={200} duration={3000}>
+                <div className="col s12 m6 offset-m1 l6 offset-l2 hidden-xs">
+                  <img
+                    src={LadyHappy}
+                    alt="woman-shopping"
+                    className="experience-img-2"
+                  />
+                </div>
+              </Fade>
             </div>
           </div>
         </div>

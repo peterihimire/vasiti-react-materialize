@@ -5,26 +5,9 @@ import ShareLinkOne from "../assets/share-story-1.svg";
 import TwoLadiesImg from "../assets/black-beautiful-ladies-smiling.svg";
 import CloseImg from "../assets/x.svg";
 import M from "materialize-css/dist/js/materialize.min.js";
-import { TimelineLite, Power3 } from "gsap";
+import Fade from "react-reveal/Fade";
 
 const ExperienceOne = () => {
-  // GSAP FUNCTIONS
-
-  let expOneImg = React.useRef(null);
-  // let expTwoImg = React.useRef(null);
-  // let vasitiMag = React.useRef(null);
-
-  let tl = new TimelineLite({ delay: 3.8 });
-
-  React.useEffect(() => {
-    const expImg = expOneImg;
-
-    // TweenMax.to(hero, 0, { css: { visibility: "visible" } });
-
-    // HEADING IMAGE ANIMATION
-    tl.from(expImg, 2, { x: -2000, ease: Power3.easeOut }, 2.4, [tl]);
-  });
-
   React.useEffect(() => {
     // Modal
     const modalTrig = document.querySelector(".modal");
@@ -59,13 +42,16 @@ const ExperienceOne = () => {
                         definately be coming back!
                       </p>
                     </div>
-                    <div className="" ref={(el) => (expOneImg = el)}>
-                      <img
-                        src={TwoLadiesImg}
-                        alt="two-ladies"
-                        className="experience-img "
-                      />
-                    </div>
+                    <Fade left delay={200} duration={3000}>
+                      <div className="">
+                        <img
+                          src={TwoLadiesImg}
+                          alt="two-ladies"
+                          className="experience-img "
+                        />
+                      </div>
+                    </Fade>
+
                     <div className="share-img-container">
                       <a href="#share" className="modal-trigger">
                         <img src={ShareLinkOne} alt="share-story-link" />
@@ -73,13 +59,15 @@ const ExperienceOne = () => {
                     </div>
                   </div>
                 </div>
-                <div className="hidden-xs" ref={(el) => (expOneImg = el)}>
-                  <img
-                    src={TwoLadiesImg}
-                    alt="two-ladies"
-                    className="experience-img "
-                  />
-                </div>
+                <Fade left delay={200} duration={3000}>
+                  <div className="hidden-xs">
+                    <img
+                      src={TwoLadiesImg}
+                      alt="two-ladies"
+                      className="experience-img "
+                    />
+                  </div>
+                </Fade>
               </div>
               <div className="col s12 m5 offset-m0 l4">
                 <div className="experience-text hidden-xs">
