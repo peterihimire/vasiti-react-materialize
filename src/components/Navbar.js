@@ -108,7 +108,7 @@ const Navbar = (props) => {
       </div>
 
       <ul className="sidenav" id="mobile-nav">
-        <div className="sidenav-close">
+        <div className="sidenav-close mobnav-close">
           <img src={CloseIcon} alt="close" />
         </div>
         <div className="sidenav-logo">
@@ -125,7 +125,7 @@ const Navbar = (props) => {
           </NavLink>
         </div>
 
-        <li className="nav-item">
+        <li className="nav-item sidenav-close">
           <NavLink
             exact
             activeClassName="active"
@@ -135,7 +135,7 @@ const Navbar = (props) => {
             about us
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item sidenav-close">
           <NavLink
             exact
             activeClassName="active"
@@ -145,7 +145,7 @@ const Navbar = (props) => {
             stories
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item sidenav-close">
           <NavLink
             exact
             activeClassName="active"
@@ -155,12 +155,12 @@ const Navbar = (props) => {
             contact
           </NavLink>
         </li>
-        <li className="nav-item login-style">
+        <li className="nav-item login-style sidenav-close">
           <a href="/" className="">
             log in
           </a>
         </li>
-        <li className="nav-item signup-style ">
+        <li className="nav-item signup-style sidenav-close">
           <a href="/" className="  ">
             sign up
           </a>

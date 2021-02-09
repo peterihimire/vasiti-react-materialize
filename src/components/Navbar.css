@@ -45,7 +45,7 @@ nav .sidenav-trigger {
   color: var(--main-black) !important;
   overflow-y: scroll;
 }
-.sidenav-close {
+.mobnav-close {
   display: flex;
   justify-content: flex-end;
   padding: 1rem 2rem 2rem 2rem;
