@@ -1,0 +1,32 @@
+.success-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 3rem 3rem 3rem;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 600px) {
+  .success-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem 3rem 1rem;
+  }
+  .success-div {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .success-div img {
+    width: 100%;
+  }
+  .thank-you-div {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .thank-you-div img {
+    width: 100%;
+  }
+}

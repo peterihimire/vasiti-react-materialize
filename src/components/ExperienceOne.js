@@ -6,6 +6,7 @@ import TwoLadiesImg from "../assets/black-beautiful-ladies-smiling.svg";
 import CloseImg from "../assets/x.svg";
 import M from "materialize-css/dist/js/materialize.min.js";
 import Fade from "react-reveal/Fade";
+import ModalSuccess from "./Modal";
 
 const ExperienceOne = () => {
   React.useEffect(() => {
@@ -188,13 +189,20 @@ const ExperienceOne = () => {
                 </div>
 
                 <div className="col s12  center-xs right-align">
-                  <button className="btn btn-bigger">Share your story</button>
+                  <button
+                    href="#modal-success"
+                    className="modal-trigger btn btn-bigger"
+                    type="submit"
+                  >
+                    Share your story
+                  </button>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </div>
+      <ModalSuccess />
     </>
   );
 };
