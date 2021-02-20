@@ -64,11 +64,11 @@
   border: 1px solid var(--primary-color) !important;
   box-shadow: none !important;
 }
-/* textarea.materialize-textarea {
-  border: 1px solid var(--main-grey) !important;
-  border-radius: 8px !important;
-  height: 5rem !important;
-} */
+textarea.materialize-textarea {
+  /* border: 1px solid var(--main-grey) !important;
+  border-radius: 8px !important; */
+  height: 7rem !important;
+}
 .file-field {
   /* display: flex; */
   /* align-items: center;
