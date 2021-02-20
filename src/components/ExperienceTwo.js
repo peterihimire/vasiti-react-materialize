@@ -6,6 +6,7 @@ import LadyHappy from "../assets/woman-shoppingbag.png";
 import CloseImg from "../assets/x.svg";
 import M from "materialize-css/dist/js/materialize.min.js";
 import Fade from "react-reveal/Fade";
+import ModalSuccess from "./Modal";
 
 const ExperienceTwo = () => {
   React.useEffect(() => {
@@ -160,6 +161,7 @@ const ExperienceTwo = () => {
           </div>
         </div>
       </div>
+      <ModalSuccess />
     </>
   );
 };
