@@ -23,7 +23,9 @@ div.hero-content-main {
 .banner-heading {
   overflow: hidden;
 }
-
+.heading-btn a {
+  color: var(--main-white) !important;
+}
 @media (min-width: 993px) {
   .main-text-container h1 {
     font-size: 45px;
@@ -67,7 +69,7 @@ div.hero-content-main {
   .banner-home-img {
     padding: 0rem 0 0 0;
   }
-  .hero-content-main{
+  .hero-content-main {
     text-align: center;
   }
 }

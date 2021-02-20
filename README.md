@@ -26,8 +26,8 @@ Project is created with:
 To run this project, install it locally using npm:
 
 ```
-$ git clone github.com/peterihimire/vasiti.git
-$ cd vasiti
+$ git clone github.com/peterihimire/vasiti-react-materialize.git
+$ cd vasiti-react-materialize
 $ npm install
 $ npm start
 Finally visit (http://localhost:3000) on your favourite browser
